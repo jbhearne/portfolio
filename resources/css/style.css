@@ -1,93 +1,140 @@
 html {
-
+    font-size: 16px;
 }
 
 body {
-
+    font-family: "Red Hat Text";
 }
 
 header {
-
+    background-color: #741010;
+    height: 6rem;
+    display: flex;
+    padding: .25rem;
+    align-items: center;
 }
 
 h1 {
-
+    font-family: Kufam;
+    min-width: 15rem;
 }
 
 .name {
-
+    color: #b3dde0;
+    font-size: 2rem;
 }
 
 .portfolio {
-
+    color: #4fb1b6;
+    font-size: 3.6rem;
 }
 
 header nav {
-
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header a {
-
+    color: #e1f1f3;
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-family: "Roboto Mono";
+    text-decoration: none;
 }
 
 .self_portrait {
-
+    min-width: 6rem;
 }
 
 .self_portrait img {
-
+    height: 5rem;
+    width: auto;
+    border-radius: 50%;
+    border: 4px dotted #107474;
 }
 
 .intro {
-
+    margin-left: 2rem;
 }
 
 h2 {
-
+    font-size: 2rem;
+    font-family: Arvo;
+    font-weight: 600;
+    margin: .5rem 0;
 }
 
 h3 {
-
+    font-size: 1.5rem;
+    font-family: Arvo;
+    margin: .25rem 0;
 }
 
 p {
-
+    
 }
 
 .contents {
-
+    margin-left: 2rem;
 }
 
 .contents nav {
-
+    width: 80%;
+    margin: 2rem auto;
+    
 }
 
 .contents nav ul {
-
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem 1rem;
+    justify-content: center;
+    
 }
 
 .contents nav ul li {
-
+    background-color: #b3dde0;
+    padding: .5rem;
+    
 }
 
 .contents nav ul li h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    
+}
 
+.contents nav ul li h3 a {
+    color: #114846;
 }
 
 .contents nav ul li p {
-
+    font-size: .9rem;
+    color:#ae2a23;
 }
 
 .project {
-
+    margin-left: 2rem;
+    display: grid;
+    grid-template-columns: 21rem 1fr;
+    margin-bottom: 3rem;
 }
 
 .project img {
+    width: 20rem;
+    border: 3px solid #129093
+}
 
+.details {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
 }
 
 .project h2 {
-
+    width: ;
 }
 
 .project h3 {
@@ -99,7 +146,8 @@ p {
 }
 
 .project ul li {
-
+    font-size: .8rem;
+    color: #ae2a23;
 }
 
 .project p {
@@ -111,7 +159,7 @@ p {
 }
 
 .project nav a {
-
+    color: #114846;
 }
 
 .more {
@@ -123,11 +171,14 @@ p {
 }
 
 footer {
-
+    background-color: #741010;
+    height: 3rem;
 }
 
 .copyright {
-
+    font-size: .8rem;
+    font-weight: lighter;
+    color: #e7c1c5;
 }
 
 footer nav {
@@ -135,5 +186,5 @@ footer nav {
 }
 
 footer nav a {
-    
+    color: #e1f1f3;
 }
