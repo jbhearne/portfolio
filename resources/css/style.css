@@ -12,6 +12,7 @@ header {
     display: flex;
     padding: .25rem;
     align-items: center;
+    border-bottom: .5rem solid #b05d5d;
 }
 
 h1 {
@@ -77,7 +78,10 @@ p {
 }
 
 .contents {
-    margin-left: 2rem;
+    margin: .2rem 2rem 1.5rem;
+    border-top: .5rem solid #ae2a23;
+    border-bottom: .25rem solid #ae2a23;
+
 }
 
 .contents nav {
@@ -95,7 +99,7 @@ p {
 }
 
 .contents nav ul li {
-    background-color: #b3dde0;
+    background-color: #e1f1f3;
     padding: .5rem;
     
 }
@@ -116,25 +120,30 @@ p {
 }
 
 .project {
-    margin-left: 2rem;
+    margin: 0 2rem;
     display: grid;
     grid-template-columns: 21rem 1fr;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
+    border-bottom: .5rem solid #e7c1c5;
+    padding-bottom: 1.5rem;
+
 }
 
 .project img {
-    width: 20rem;
-    border: 3px solid #129093
+    width: 95%;
+    border: 5px solid #129093;
+    border-radius: 15px;
 }
 
 .details {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 100%;
+    
 }
 
 .project h2 {
-    width: ;
+
 }
 
 .project h3 {
@@ -142,16 +151,22 @@ p {
 }
 
 .project ul {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.project ul h4 {
+    width: 100%;
 }
 
 .project ul li {
     font-size: .8rem;
     color: #ae2a23;
+    margin: .5rem .25rem;
 }
 
 .project p {
-
+    margin: .5rem 0;
 }
 
 .project nav {
@@ -162,27 +177,84 @@ p {
     color: #114846;
 }
 
-.more {
+@media only screen and (max-width: 600px) {
+    .project {
+        margin-left: 1rem;
+        grid-template-columns: 16rem 1fr;
+    }
+    
+    .project img {
+        border: 3px solid #129093
+    }
+    
+    .details {
+        
+    }
+    
+    .project h2 {
+        font-size: 1.5rem;
+    }
+    
+    .project h3 {
+        font-size: 1.25rem;
+    }
+    
+    .project ul {
 
+    }
+    
+    .project ul h4 {
+        width: fit-content;
+        margin-right: .5rem;
+    }
+    
+    .project ul li {
+        font-size: .8rem;
+        margin: .25rem .25rem;
+    }
+    
+    .project p {
+        margin: .25rem 0;
+        font-size: .9rem;
+    }
+    
+    .project nav {
+    
+    }
+    
+    .project nav a {
+        font-size: .8rem;
+    }
+}
+
+.more {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
 }
 
 .more a {
-
+    color: #107474;
 }
 
 footer {
     background-color: #741010;
     height: 3rem;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    border-top: .25rem solid #b05d5d;
 }
 
 .copyright {
     font-size: .8rem;
     font-weight: lighter;
     color: #e7c1c5;
+    width: 25%;
 }
 
 footer nav {
-
+    width: 75%;
+    text-align: right;
 }
 
 footer nav a {
