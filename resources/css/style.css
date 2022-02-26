@@ -13,6 +13,7 @@ header {
     padding: .25rem;
     align-items: center;
     border-bottom: .5rem solid #b05d5d;
+    margin-bottom: 1rem;
 }
 
 h1 {
@@ -20,24 +21,26 @@ h1 {
     min-width: 15rem;
 }
 
-.name {
+.name a {
     color: #b3dde0;
     font-size: 2rem;
+    text-decoration: none;
 }
 
-.portfolio {
+.portfolio a {
     color: #4fb1b6;
     font-size: 3.6rem;
+    text-decoration: none;
 }
 
 header nav {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-header a {
+header nav a {
     color: #e1f1f3;
     font-size: 1.25rem;
     font-weight: bold;
@@ -54,6 +57,17 @@ header a {
     width: auto;
     border-radius: 50%;
     border: 4px dotted #107474;
+}
+
+@media only screen and (max-width: 600px) {
+    header nav {
+        display: none;
+    }
+
+    .self_portrait {
+        width: 100%;
+        text-align: right;
+    }
 }
 
 .intro {
@@ -117,6 +131,16 @@ p {
 .contents nav ul li p {
     font-size: .9rem;
     color:#ae2a23;
+}
+
+@media only screen and (max-width: 450px) {
+    .contents nav ul li h3 {
+        font-size: .8rem;    
+    }
+
+    .contents nav ul li p {
+        font-size: .7rem;
+    }
 }
 
 .project {
@@ -225,6 +249,14 @@ p {
     .project nav a {
         font-size: .8rem;
     }
+}
+
+@media only screen and (max-width: 450px) {
+    
+    .project {
+        grid-template-columns: 1fr;
+    }
+
 }
 
 .more {
