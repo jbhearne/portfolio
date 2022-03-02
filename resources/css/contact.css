@@ -13,12 +13,18 @@
     margin-left: 2rem;
 }
 
-.growKC {
-    
+#grow_KC {
+    font-weight: bold;
+}
+
+#grow_KC:hover {
+    font-weight: 300;
 }
 
 .kc {
     height: 10rem;
+    width: fit-content;
+    
 }
 
 .kc img{
